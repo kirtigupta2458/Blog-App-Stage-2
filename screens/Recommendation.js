@@ -21,7 +21,7 @@ export default class PopularArticlesScreen extends Component {
     axios
       .get(url)
       .then(async response => {
-        this.setState({ data: response.data });
+        this.setState({ data: response.data.data });
       })
       .catch(error => {
         console.log(error.message);
@@ -31,7 +31,6 @@ export default class PopularArticlesScreen extends Component {
   keyExtractor = (item, index) => index.toString();
 
   renderItems = ({ item, index }) => {
-    console.log(item);
     return (
       <Card
         key={`card-${index}`}
