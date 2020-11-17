@@ -49,7 +49,7 @@ const AppStackNavigator = createStackNavigator(
       navigationOptions: {
         headerBackTitle: null,
         headerTintColor: "#fff",
-        headerTitle: "Recommended Articles",
+        headerTitle: "Articles",
         headerStyle: {
           backgroundColor: "#d500f9"
         },
