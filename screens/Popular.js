@@ -34,17 +34,7 @@ export default class PopularArticlesScreen extends Component {
     console.log(item);
     return (
       <Card
-        key={`card-${index}`}
-        title={item.title}
-        containerStyle={[
-          styles.cardContainer,
-          {
-            backgroundColor: `rgb(${Math.floor(Math.random() * 56) +
-              200}, ${Math.floor(Math.random() * 56) + 200},${Math.floor(
-              Math.random() * 56
-            ) + 200})`
-          }
-        ]}
+       
       >
         <View style={styles.iconContainer}>
           <Icon type={"antdesign"} name={"heart"} size={RFValue(20)} />
