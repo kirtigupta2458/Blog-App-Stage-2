@@ -25,38 +25,17 @@ export default class HomeScreen extends Component {
 
   getArticle = () => {
     const url = "http://localhost:5000/get-article";
-    axios
-      .get(url)
-      .then(response => {
-        this.setState({ articleDetails: response.data.data });
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+    
   };
 
   likedArticle = () => {
     const url = "http://localhost:5000/liked-article";
-    axios
-      .post(url)
-      .then(response => {
-        this.getArticle();
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+    
   };
 
   unlikedArticle = () => {
     const url = "http://localhost:5000/unliked-article";
-    axios
-      .post(url)
-      .then(response => {
-        this.getArticle();
-      })
-      .catch(error => {
-        console.log(error.message);
-      });
+    
   };
 
   render() {
